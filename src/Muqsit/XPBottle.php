@@ -37,7 +37,7 @@ class XPBottle extends PluginBase implements Listener{
     foreach($p->getInventory()->getContents() as $item){
       if($item->getId() === 384 && $item->getDamage() >= 32000){
 	$p->sendMessage(TF::BOLD.TF::RED."(!) ".TF::RESET.TF::RED."An XP bottle in your inventory caused you to crash!");
-	$p->sendMessage(TF::YELLOW.TF::BOLD."(!) ".TF::RESET.TF::YELLOW."We have refunded your XP.");
+	$p->sendMessage(TF::YELLOW.TF::BOLD."(!) ".TF::RESET.TF::GOLD."We have refunded your XP.");
 	$p->addExperience($item->getDamage());
 	$p->getInventory()->remove($item);
       }
