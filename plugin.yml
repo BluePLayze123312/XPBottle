@@ -1,7 +1,7 @@
 name: XPBottle
 api: 3.9.0
 main: Muqsit\XPBottle
-version: 1.0
+version: 1.0.0
 commands:
   xpbottle:
     description: Redeem XP into XP Bottles.
